@@ -4,7 +4,7 @@ import app from '../src/config/app';
 const request = supertest(app);
 
 describe('Testing app.ts', () => {
-  test('It should responde the Get method', async () => {
+  test('It should respond the Get method', async () => {
     const response = await request.get('/');
 
     expect(response.status).toBe(200);
